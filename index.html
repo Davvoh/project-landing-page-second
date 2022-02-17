@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                color: black;
+                font-weight: 500;
+                width: 100%;
+                height: auto;
+            }
+           #header {
+               width: 100%;
+               position: fixed;
+               height: 70px;
+               display: block;
+               z-index: 100;
+               top: 0;
+               left: 0;
+               color: white;
+               background-color: white;
+           }
+           h1 {
+               margin-top: 140px;
+               justify-content: center;
+               margin-left: auto;
+               margin-right: auto;
+               display: flex;
+               font-weight: bold;
+               font-size: 45px;
+               width: 60%;
+               padding: 35px;
+           }
+           #video {
+               justify-content: center;
+               display: flex;
+               margin-top: 80px;
+               margin-left: auto;
+               margin-right: auto;
+               width: 100%;
+               height: auto;
+               max-width: 70vw;
+           }
+           #form {
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               margin-top: 60px;
+               width: 31%;
+               margin-left: auto;
+               margin-right:auto ;
+               gap: 18px;
+               margin-bottom: 50px;
+           }
+           #submit {
+               display: flex;
+               justify-content: center;
+               width: 20%;
+               margin-left: auto;
+               margin-right: auto;
+               padding: 10px;
+               background-color: rgb(255, 255, 0);
+           }
+           #email {
+               padding: 15px;
+           }
+           #nav-bar {
+               display: flex;
+               justify-content: center;
+               gap: 23px;
+               align-items: center;
+               margin-right: 10px;
+           }
+           #header-img {
+               width: 100%;
+               height: auto;
+               max-width: 40vw;
+               align-self: center;
+               margin-top: 5px;
+               display: flex;
+           }
+           #container {
+               flex-direction: row;
+               display: flex;
+               justify-content: space-between;
+           }
+           @media only screen and (max-width: 768px) {
+               #submit {
+                   width: 100px;
+               }
+           }
+           #second-container {
+               display: flex;
+               justify-content: center;
+               margin-left: auto;
+               margin-right: auto;
+               width: 40%;
+               flex-direction: column;
+               margin-top: 15px;
+           }
+        </style>
+
+    </head>
+
+    <body>
+        <header id="header">
+            <div id="container">
+              <img id="header-img" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="logo">
+              <nav id="nav-bar">
+                <a class="nav-link" href="#video">Video</a>
+                <a class="nav-link" href="#how-it-works">How it works</a>
+                <a class="nav-link" href="#email">Email</a>
+               </nav>
+            </div>   
+        </header>
+        <h1>Quality hand-crafted instruments!</h1>
+
+        <video id="video" width="680" height="420" controls>
+            <source src="https://www.youtube.com/watch?v=PY8f1Z3nARo" type="video/ogg">       
+        </video>
+
+        <div id="second-container">
+          <h2 id="how-it-works">How it works</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent faucibus turpis nec facilisis rutrum. Ut condimentum, justo et lacinia malesuada, tellus mauris ultricies sapien, non euismod nunc elit id dolor. Nunc quis sem odio. Nulla purus turpis, tincidunt ac massa sit amet, cursus vehicula ipsum. Maecenas maximus dapibus mauris eu elementum. Morbi iaculis a velit sit amet iaculis. Quisque mattis metus nulla. In ac enim convallis, condimentum ligula vel, egestas elit. Ut ultricies metus enim, nec rhoncus neque egestas eu. Aliquam convallis, ante rhoncus mattis gravida, lectus magna posuere lectus, non aliquet sapien ex elementum massa.</p>
+        </div>
+
+
+        <form id="form" action="https://www.freecodecamp.org/email-submit">
+            <label for="email">Get yourself the instrument you deserve!</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email adress" required>
+            <input type="submit" id="submit" name="submit" value="Confirm">
+        </form>
+
+    </body>
+</html>
